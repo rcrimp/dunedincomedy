@@ -42,8 +42,10 @@ nav {
 }
 
 /* Hide the link that should open and close the menu on small screens */
-.menu .icon {
+.menu a.icon {
     display: none;
+    color: black;
+    background-color: #ddd;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the menu (.icon) */
@@ -72,7 +74,7 @@ nav {
 	display: block;
 	position: absolute;
   right: 0px;
-  top: 0;
+  top: 5px;
 	width: 170px;
 	padding: 0px;
 	list-style-type: none;
@@ -80,5 +82,5 @@ nav {
 #contact li input {
 	height: 30px;
 	float: left;
-	padding: 6px;
+	padding: 5px;
 }
