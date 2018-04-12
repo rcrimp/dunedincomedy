@@ -1,0 +1,97 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dunedin Comedy - Comedians</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="nav-style.css">
+    <script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="dist/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body> 
+    <nav>
+    	<a href="#">
+	  		<img id="logo" src="img/logo-dunedin.png" width="119px" height="50px">
+		</a>
+	  	<div id="nav-buttons" class="menu">
+	  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			<a href="index.html">HOME</a>
+			<a href="events.html">EVENTS</a>
+			<a href="comedians.html" class="active">COMEDIANS</a>
+			<a href="join.html">JOIN US</a>
+		</div>
+		<script>
+		  	function myFunction() {
+			    var x = document.getElementById("nav-buttons");
+			    if (x.className === "menu") {
+			        x.className += " responsive";
+			    } else {
+			        x.className = "menu";
+			    }
+			}
+		</script>
+	  
+		<ul id="contact">
+		<li>
+		  <input type="image" src="img/fb.png" onMouseOver="this.src='img/fb-hover.png'" onMouseOut="this.src='img/fb.png'" onclick="window.location='http://www.facebook.com/dunedinopenmiccomedy/';" >
+		</li>
+		<li>
+		  <input type="image" src="img/twitter.png" onMouseOver="this.src='img/twitter-hover.png'" onMouseOut="this.src='img/twitter.png'" onclick="" >
+		</li>
+		<li>
+		  <input type="image" src="img/yt.png" onMouseOver="this.src='img/yt-hover.png'" onMouseOut="this.src='img/yt.png'" onclick="" >
+		</li>
+		<li>
+		  <input type="image" src="img/instagram.png" onMouseOver="this.src='img/instagram-hover.png'" onMouseOut="this.src='img/instagram.png'" onclick="" >
+		</li>
+		</ul>
+	</nav>
+    
+    <section>
+      <h2>COMEDIAN PROFILES</h2>
+      <ul class="grid-flow">
+        <li>
+          <div>
+            <img src="img/aaron.jpg">
+            <p>Aaron Harlech</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="img/dan.jpg">
+            <p>Dan Brader</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="img/ian.jpg">
+            <p>Ian Loughran</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="img/jimmy.jpg">
+            <p>Jimmy James Fletcher</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="img/reuben.jpg">
+            <p>Reuben Crisp</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="img/simon.jpg">
+            <p>Simon Kingsley-Holmes</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    
+    <footer>&copy; Dunedin Comedy Club</footer>
+  </body>
+</html>
