@@ -57,6 +57,8 @@ h2 {
    list-style-type:none;
    white-space:nowrap;
    transition:2.0s;
+
+   -webkit-overflow-scrolling: touch;
 }
 .grid-scroll li {
    display: inline-block;
@@ -84,7 +86,7 @@ h2 {
    padding: 0;
 
    color: white;
-   background-color: black;
+   background-color: #800000; 
 }
 .arrow:first-of-type {
    left:0;
