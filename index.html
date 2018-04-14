@@ -1,141 +1,226 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dunedin Comedy - Home</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="nav-style.css">
-    <script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <!--[if lt IE 9]>
-      <script src="dist/html5shiv.js"></script>
-    <![endif]-->
-  </head>
-  <body> 
-    <nav>
-    	<a href="#">
-	  		<img id="logo" src="img/logo-dunedin.png" width="119px" height="50px">
-		</a>
-	  	<div id="nav-buttons" class="menu">
-	  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-			<a href="#home" class="active">HOME</a>
-			<a href="events.html">EVENTS</a>
-			<a href="comedians.html">COMEDIANS</a>
-			<a href="join.html">JOIN US</a>
-		</div>
-	  <script>
-	  	function myFunction() {
-		    var x = document.getElementById("nav-buttons");
-		    if (x.className === "menu") {
-		        x.className += " responsive";
-		    } else {
-		        x.className = "menu";
-		    }
-		}
-		</script>
-	  
-	  <ul id="contact">
-	    <li>
-	      <input type="image" src="img/fb.png" onMouseOver="this.src='img/fb-hover.png'" onMouseOut="this.src='img/fb.png'" onclick="window.location='http://www.facebook.com/dunedinopenmiccomedy/';" >
-	    </li>
-	    <li>
-	      <input type="image" src="img/twitter.png" onMouseOver="this.src='img/twitter-hover.png'" onMouseOut="this.src='img/twitter.png'" onclick="" >
-	    </li>
-	    <li>
-	      <input type="image" src="img/yt.png" onMouseOver="this.src='img/yt-hover.png'" onMouseOut="this.src='img/yt.png'" onclick="" >
-	    </li>
-	    <li>
-	      <input type="image" src="img/instagram.png" onMouseOver="this.src='img/instagram-hover.png'" onMouseOut="this.src='img/instagram.png'" onclick="" >
-	    </li>
-	  </ul>
-	</nav>
-    
-    <section id="video-wrapper-wrapper">
-	    <div id="video-wrapper">
-			<iframe id="video" src="https://player.vimeo.com/video/262723424" width="640" frameborder="0" 	webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-		</div>
-	</section>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Dunedin Comedy - Home</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="nav-style.css">
+      <script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <!--[if lt IE 9]>
+         <script src="dist/html5shiv.js"></script>
+      <![endif]-->
+   </head>
+   <body> 
+      <nav>
+         <a href="#">
+            <img id="logo" src="img/logo-dunedin.png" width="119px" height="50px">
+         </a>
+         <div id="nav-buttons" class="menu">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            <a href="#home" class="active">HOME</a>
+            <a href="events.html">EVENTS</a>
+            <a href="comedians.html">COMEDIANS</a>
+            <a href="join.html">JOIN US</a>
+         </div>
+         <script>
+function myFunction() {
+   var x = document.getElementById("nav-buttons");
+   if (x.className === "menu") {
+      x.className += " responsive";
+   } else {
+      x.className = "menu";
+   }
+}
+         </script>
 
-    <section>
-      <h2>UPCOMING EVENTS</h2>
-      <ul class="grid-scroll">
-        <li>
-          <div>
-            <img src="img/nogoodstinkinlosercomedyshow.jpg">
-            <div class="over-image">
-              <p>my no good stinkin' loser comedy show<br>9pm 2/6/18 - Dee's Cafe</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="img/justindan.jpg">
-            <div class="over-image">
-              <p>Justin and Dan<br>Headin' South</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="img/ars.jpg">
-            <div class="over-image">
-              <p>A Quality Piece of ARS<br>Inch Bar</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="img/lager.jpg">
-            <div class="over-image">
-              <p>Lager is the Best Medicine<br>Invercargill Brewery</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
+         <ul id="contact">
+            <li>
+               <a href="http://www.facebook.com/dunedinopenmiccomedy/">
+                  <input type="image" src="img/fb.png" onMouseOver="this.src='img/fb-hover.png'" onMouseOut="this.src='img/fb.png';" >
+               </a>
+            </li>
+            <li>
+               <a href="http://www.twitter.com/dunedincomedy/">
+                  <input type="image" src="img/twitter.png" onMouseOver="this.src='img/twitter-hover.png'" onMouseOut="this.src='img/twitter.png'" onclick="" >
+               </a>
+            </li>
+            <li>
+               <a href="">
+                  <input type="image" src="img/yt.png" onMouseOver="this.src='img/yt-hover.png'" onMouseOut="this.src='img/yt.png'" onclick="" >
+               </a>
+            </li>
+            <li>
+               <a href="http://www.instagram.com/dunedincomedy/">
+                  <input type="image" src="img/instagram.png" onMouseOver="this.src='img/instagram-hover.png'" onMouseOut="this.src='img/instagram.png'" onclick="" >
+               </a>
+            </li>
+         </ul>
+      </nav>
 
-    <section>
-      <h2>LOCAL COMEDIANS</h2>
-      <ul class="grid-flow">
-        <li>
-          <div>
-            <img src="img/aaron.jpg">
-            <p>Aaron Harlech</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="img/dan.jpg">
-            <p>Dan Brader</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="img/ian.jpg">
-            <p>Ian Loughran</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="img/jimmy.jpg">
-            <p>Jimmy James Fletcher</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="img/reuben.jpg">
-            <p>Reuben Crisp</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="img/simon.jpg">
-            <p>Simon Kingsley-Holmes</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <footer>&copy; Dunedin Comedy Club</footer>
-  </body>
+      <div id="container">
+      <section id="video-wrapper-wrapper">
+         <div id="video-wrapper">
+            <iframe id="video" src="https://player.vimeo.com/video/262723424" width="640" frameborder="0" 	webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+         </div>
+      </section>
+
+      <section>
+         <h2>EVENTS</h2>
+         <div class="scroll-wrapper">
+            <span class="arrow">&lt;</span>
+            <span class="arrow">&gt;</span>
+            <ul class="grid-scroll" id="nav">
+               <li>
+                  <div>
+                     <img src="img/nogoodstinkinlosercomedyshow.jpg">
+                     <div class="over-image">
+                        <p>Dan Brader</p>
+                     </div>
+                     <div class="under-image">
+                        <p>2/6/18 Dee's Cafe</p>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="img/justindan.jpg">
+                     <div class="over-image">
+                        <p>Justin White &amp; Dan Brader</p>
+                     </div>
+                     <div class="under-image">
+                        <p>Mint Bar</p>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="img/ars.jpg">
+                     <div class="over-image">
+                        <p>A Quality Piece of ARS</p>
+                     </div>
+                     <div class="under-image">
+                        <p>Inch Bar</p>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="img/lager.jpg">
+                     <div class="over-image">
+                        <p>Lager is the Best Medicine<br>
+                     </div>
+                     <div class="under-image">
+                        <p>Invercargill Brewery</p>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="img/nogoodstinkinlosercomedyshow.jpg">
+                     <div class="over-image">
+                        <p>Dan Brader</p>
+                     </div>
+                     <div class="under-image">
+                        <p>2/6/18 Dee's Cafe</p>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="img/justindan.jpg">
+                     <div class="over-image">
+                        <p>Justin White &amp; Dan Brader</p>
+                     </div>
+                     <div class="under-image">
+                        <p>Mint Bar</p>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="img/ars.jpg">
+                     <div class="over-image">
+                        <p>A Quality Piece of ARS</p>
+                     </div>
+                     <div class="under-image">
+                        <p>Inch Bar</p>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="img/lager.jpg">
+                     <div class="over-image">
+                        <p>Lager is the Best Medicine<br>
+                     </div>
+                     <div class="under-image">
+                        <p>Invercargill Brewery</p>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <script>
+$(".arrow:first-of-type").click(
+      function() {
+         var navwidth = $("#nav");
+         navwidth.scrollLeft(navwidth.scrollLeft() - 210);
+      }
+);
+$(".arrow:nth-of-type(2)").click(
+      function() {
+         var navwidth = $("#nav");
+         navwidth.scrollLeft(navwidth.scrollLeft() + 210);
+      }
+);  
+
+         </script>
+      </section>
+
+      <section>
+         <h2>COMEDIANS</h2>
+         <ul class="grid-flow">
+            <li>
+               <div>
+                  <img src="img/aaron.jpg">
+                  <p>Aaron Harlech</p>
+               </div>
+            </li>
+            <li>
+               <div>
+                  <img src="img/dan.jpg">
+                  <p>Dan Brader</p>
+               </div>
+            </li>
+            <li>
+               <div>
+                  <img src="img/ian.jpg">
+                  <p>Ian Loughran</p>
+               </div>
+            </li>
+            <li>
+               <div>
+                  <img src="img/jimmy.jpg">
+                  <p>Jimmy James Fletcher</p>
+               </div>
+            </li>
+            <li>
+               <div>
+                  <img src="img/reuben.jpg">
+                  <p>Reuben Crisp</p>
+               </div>
+            </li>
+            <li>
+               <div>
+                  <img src="img/simon.jpg">
+                  <p>Simon Kingsley-Holmes</p>
+               </div>
+            </li>
+         </ul>
+      </section>
+      </div>
+      <footer>&copy; Dunedin Comedy Club</footer>
+   </body>
 </html>
