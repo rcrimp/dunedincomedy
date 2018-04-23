@@ -2,8 +2,7 @@
 nav {
    width: 100%;
    overflow: hidden;
-   position: -webkit-sticky; /* Safari */
-   position: sticky;
+   position: fixed;
    top: 0;
    z-index: 100000; /* on top of everything */
    background-color: #800000;
