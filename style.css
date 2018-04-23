@@ -7,6 +7,7 @@ html, body {
    height: 100%;
 }
 #container {
+   margin-top: 50px;
    display:block;
    min-height:calc(100% - (2 * 50px));
    background-image: url("img/background.jpg");
@@ -193,8 +194,26 @@ h2 {
       width: 16.66666666%;
    }
 }
-
+#video-wrapper-wrapper-wrapper {
+   background-color: rgba(0,0,0, 0.5);
+}
 #video-wrapper-wrapper {
+   max-width: 600px;
+   margin: 0 auto;
+}
+#video-wrapper {
+   position: relative;
+   padding-bottom: 56.25%; /* 16:9 */
+   height: 0;
+}
+#video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+/*#video-wrapper-wrapper {
    max-height: 350px;
    background-color: rgba(0,0,0, 0.5);
 }
@@ -214,4 +233,4 @@ h2 {
    width: 100%;
    height: 100%;
    max-height: 350px;
-}
+}*/
