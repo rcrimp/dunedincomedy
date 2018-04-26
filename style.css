@@ -6,6 +6,9 @@
 html, body {
    height: 100%;
 }
+a {
+    text-decoration: none;
+}
 #container {
    margin-top: 50px;
    display:block;
