@@ -78,7 +78,6 @@ h2, section p {
    position: relative;
 }
 .arrow {
-   display:block;
    width:30px;
    text-align:center;
    font-weight:bold;
@@ -89,13 +88,20 @@ h2, section p {
    height: 100%;
    padding: 0;
 
+   display: flex;
+   justify-content:center;
+   align-content:center;
+   flex-direction:column; /* column | row */
+
    color: white;
-   background-color: #800000; 
+   background-color: rgba(0,0,0, 0.5);
 }
 .arrow:first-of-type {
    left:0;
+   border-radius: 30px 0 0 30px;
 }
 .arrow:nth-of-type(2) {
+   border-radius: 0 30px 30px 0;
    right:0; 
 }
 
