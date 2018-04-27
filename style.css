@@ -16,7 +16,7 @@ a {
    background-image: url("img/background.jpg");
    background-repeat: no-repeat;
    background-size:100%;
-   background-color: #30120a;
+   background-color: #48271e;
 }
 /* footer */
 footer {
@@ -82,7 +82,6 @@ h2 {
 .grid-scroll li:hover {
    background-color: #c42020;
 }
-
 .grid-scroll li div img {
    width: 100%;
    filter: brightness(70%);
@@ -90,7 +89,6 @@ h2 {
 .grid-scroll li div img:hover {
    filter: none;
 }
-
 .grid-scroll li div {
    position: relative;
 }
@@ -98,18 +96,22 @@ h2 {
    display: block;
    position: absolute;
    left: 0;
-   bottom: 30px;
+   bottom: 25px;
    height: 0;
+   width: 100%;
 }
 .over-image p {
    pointer-events: none;
    font-size: 1rem;
    text-align: center;
-   height: 20px;
+   
    color: white;
-   padding: 5px;
+   
    color: white;
    text-shadow: 0 0 5px black;
+
+   width: 100%;
+   height: 100%;
 }
 .under-image {
    display: block;
@@ -140,7 +142,10 @@ h2 {
    align-content:center;
    flex-direction:column;
    color: white;
-   background-color: rgba(0,0,0, 0.5);
+   background-color: rgba(0,0,0, 0.25);
+}
+.arrow:hover{
+   background-color: rgba(0, 0, 0, 1.0);
 }
 .arrow:first-of-type {
    left:0;
