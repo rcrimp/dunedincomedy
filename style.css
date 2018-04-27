@@ -36,6 +36,13 @@ p {
    clear: both;
    color: white;
 }
+h1 {
+   clear: both;
+   padding: 20px;
+   color: white;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.5);
+}
 h2, section p {
    clear: both;
    padding: 20px;
@@ -243,3 +250,97 @@ h2, section p {
    height: 100%;
    max-height: 350px;
 }*/
+
+
+/* event pages */
+.event {
+   padding: 20px;
+}
+
+.event h2 {
+   padding: 0;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+.event img {
+   max-width: 400px ;
+   width: 100%;
+   display:block;
+   margin:auto;
+}
+
+.event-details {
+   margin-top: 20px;
+   padding: 10px;
+   background-color: rgba(0,0,0, 0.5);
+}
+
+.event-details table tr td:nth-child(1) {  
+   color: white;
+   padding-right: 20px;
+}
+
+.event-details table tr td:nth-child(2) {  
+   color: white;
+   font-weight: bold;
+}
+
+.event-description {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   padding: 10px;
+   background-color: rgba(0,0,0, 0.5);
+}
+
+ @media screen and (min-width: 55em) {
+   .event {
+      max-width: 750px;
+      margin: 0 auto;
+   } 
+   .event h2 {
+      margin-left: 420px;
+      height: 0;
+      margin-bottom: 20px;
+   }
+
+   .event img {
+      float: left;
+   }
+   .event-details {
+      margin-top: 20px;
+      margin-left: 20px;
+      float: left;
+      min-height: 206px;
+
+      width: calc(750px - (400px + 40px));
+    }
+    .event-details table tr td {  
+      /*padding: 5px 0 5px 0;*/
+   }
+    .event-description {
+      clear: both;
+      float: left;
+    }
+ }
+
+
+
+
+ .fb-link {
+   display: block;
+   margin-top: 10px;
+   padding: 10px;
+   color: white;
+   background-color: #3b5998;
+   font-weight: bold;
+}
+
+.eventfinda-link {
+   display: block;
+   margin-top: 10px;
+   padding: 10px;
+   color: white;
+   background-color: #5939a2;
+   font-weight: bold;
+}
