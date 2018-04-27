@@ -60,7 +60,86 @@ function myFunction() {
       </nav>
 
       <div id="container">
-         <div class="event">
+
+         <section>
+         <div class="event" id="event-blank">
+            <h2>Show Name</h2>
+            <img width="400px" height="266px" src="">
+            <div class="event-details">
+               <table>
+                  <tr>
+                     <td>date</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>time</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>venue</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>address</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>cost</td>
+                     <td></td>
+                  </tr>
+               </table>
+               <a class="fb-link" href="">Facebook Event</a>
+            </div>
+            <div class="event-description">
+               <p>
+                 <br>
+                 <br>
+                 <br>
+               </p>
+            </div>
+         </div>
+
+         <div class="event" id="event-ars" style="display: none;">
+            <h2>A Quality Piece of ARS</h2>
+            <img src="img/ars.jpg">
+            <div class="event-details">
+               <table>
+                  <tr>
+                     <td>date</td>
+                     <td>Saturday 5th May</td>
+                  </tr>
+                  <tr>
+                     <td>time</td>
+                     <td>7:30 PM</td>
+                  </tr>
+                  <tr>
+                     <td>venue</td>
+                     <td>DARKROOM</td>
+                  </tr>
+                  <tr>
+                     <td>address</td>
+                     <td>336 St Asaph St, Chch</td>
+                  </tr>
+                  <tr>
+                     <td>cost</td>
+                     <td>$10</td>
+                  </tr>
+               </table>
+               <a class="fb-link" target="_blank" href="https://www.facebook.com/events/165909337456843/">Facebook Event</a>
+               <a class="eventfinda-link" target="_blank" href="https://www.eventfinda.co.nz/2018/a-quality-piece-of-ars/christchurch?_ga=2.115553158.1637594622.1524515274-721025268.1524195487">Eventfinda Tickets</a>
+            </div>
+            <div class="event-description">
+               <p>
+                 Their sets are much more thought out then their event description, so you have the guarantee that the shows better than this blurb.<br>
+
+Don't believe it? Come check out Reuben Crimp, Simon Kingsley-Holmes, and Annie Hayes making up for this vague description.<br>
+
+'Something on offer for all senses of humour' - TheatreReview"
+               </p>
+            </div>
+         </div>
+
+         <div class="event" id="event-downstairs" style="display: none;">
             <h2>Dee's Downstairs Comedy!</h2>
             <img src="img/downstairs.jpg">
             <div class="event-details">
@@ -96,8 +175,8 @@ function myFunction() {
                </p>
             </div>
          </div>
-
-         <div class="event">
+         
+         <div class="event" id="event-openmic" style="display: none;">
             <h2>Open Mic Comedy</h2>
             <img src="img/openmic.jpg">
             <div class="event-details">
@@ -134,7 +213,7 @@ If you are feeling brave, email reuben@dunedincomedy.co.nz, and we'll set you up
             </div>
          </div>
 
-          <div class="event">
+          <div class="event" id="event-danbrader" style="display: none;">
             <h2 style="font-size:16px;">My No Good Stinkin' Loser Comedy Show</h2>
             <img src="img/nogoodstinkinlosercomedyshow.jpg">
             <div class="event-details">
@@ -170,8 +249,8 @@ Dan Brader in his eleventh year of stand up comedy! He's lived and performed in 
             </div>
          </div>
 
-         <div class="event">
-            <h2>Pun Battle Dunedin!</h2>
+         <div class="event" id="event-punbattle" style="display: none;">
+            <h2>Pun Battle Championships</h2>
             <img src="img/punbattle.jpg">
             <div class="event-details">
                <table>
@@ -210,8 +289,153 @@ Expect utter pundemonium as we decide once and for all if the pun is mightier th
                </p>
             </div>
          </div>
-         <p></p> <!--  empty div fixes floats -->
+         </section>
+
+         <section>
+            <h2>More Events</h2>
+            <div class="scroll-wrapper">
+               <span class="arrow">&#9664;</span>
+               <span class="arrow">&#9654;</span>
+               <ul class="grid-scroll" id="nav">
+                  <li>
+                     <a href="#" id="link-ars" onclick=""><div>
+                        <img src="img/ars.jpg">
+                        <div class="over-image">
+                           <p>A Quality Piece of ARS</p>
+                        </div>
+                        <div class="under-image">
+                           <p>5th May</p>
+                        </div>
+                     </div></a>
+                  </li>
+
+                   <li>
+                     <a href="#" id="link-downstairs" onclick=""><div>
+                        <img src="img/downstairs.jpg">
+                        <div class="over-image">
+                           <p>Dee's Downstairs Comedy!</p>
+                        </div>
+                        <div class="under-image">
+                           <p>11th May</p>
+                        </div>
+                     </div></a>
+                  </li>
+
+                  <li>
+                     <a href="#" id="link-openmic" onclick=""><div>
+                        <img src="img/openmic.jpg">
+                        <div class="over-image">
+                           <p>Open Mic Comedy</p>
+                        </div>
+                        <div class="under-image">
+                           <p>17th May</p>
+                        </div>
+                     </div></a>
+                  </li>
+
+                  <li>
+                     <a href="#" id="link-danbrader" onclick=""><div>
+                        <img src="img/nogoodstinkinlosercomedyshow.jpg">
+                        <div class="over-image">
+                           <p>Dan Brader</p>
+                        </div>
+                        <div class="under-image">
+                           <p>2nd June</p>
+                        </div>
+                     </div></a>
+                  </li>
+
+                  <li>
+                     <a href="#" id="link-punbattle" onclick=""><div>
+                        <img src="img/punbattle.jpg">
+                        <div class="over-image">
+                           <p>Pun Battle</p>
+                        </div>
+                        <div class="under-image">
+                           <p>30th June</p>
+                        </div>
+                     </div></a>
+                  </li>
+
+               </ul>
+            </div>
+         </section>
       </div>
+
+         <script type="text/javascript">
+// load default
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    location.search
+        .substr(1)
+        .split("&")
+        .forEach(function (item) {
+          tmp = item.split("=");
+          if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+        });
+    return result;
+}
+
+var tag = findGetParameter("event")
+if (tag === null){
+   tag = "downstairs" // default
+}
+$("#event-blank").css("display","none")
+$("#event-" + tag).css("display","block")
+
+// load on click others
+document.getElementById("link-ars").onclick = function() {
+   $('.event').each(function(i, obj) {
+      $(this).css("display", "none");
+   });
+   $('#event-ars').css("display", "block")
+   return false;
+};
+document.getElementById("link-downstairs").onclick = function() {
+   $('.event').each(function(i, obj) {
+      $(this).css("display", "none");
+   });
+   $('#event-downstairs').css("display", "block")
+   return false;
+};
+document.getElementById("link-openmic").onclick = function() {
+   $('.event').each(function(i, obj) {
+      $(this).css("display", "none");
+   });
+   $('#event-openmic').css("display", "block")
+   return false;
+};
+document.getElementById("link-danbrader").onclick = function() {
+   $('.event').each(function(i, obj) {
+      $(this).css("display", "none");
+   });
+   $('#event-danbrader').css("display", "block")
+   return false;
+};
+document.getElementById("link-punbattle").onclick = function() {
+   $('.event').each(function(i, obj) {
+      $(this).css("display", "none");
+   });
+   $('#event-punbattle').css("display", "block")
+   return false;
+};
+
+// left / right buttons on grid scroll
+$(".arrow:first-of-type").click(
+      function() {
+         var navwidth = $("#nav");
+         navwidth.scrollLeft(navwidth.scrollLeft() - 210);
+      }
+      );
+$(".arrow:nth-of-type(2)").click(
+      function() {
+         var navwidth = $("#nav");
+         navwidth.scrollLeft(navwidth.scrollLeft() + 210);
+      }
+      );  
+         </script>
+
       <footer>&copy; Dunedin Comedy Club</footer>
    </body>
 </html>

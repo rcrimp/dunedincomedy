@@ -43,7 +43,7 @@ h1 {
    text-align: center;
    background-color: rgba(0, 0, 0, 0.5);
 }
-h2, section p {
+h2 {
    clear: both;
    padding: 20px;
    color: white;
@@ -68,6 +68,8 @@ h2, section p {
    list-style-type:none;
    white-space:nowrap;
    transition:2.0s;
+
+   background-color: rgba(0, 0, 0, 0.25);
 
    -webkit-overflow-scrolling: touch;
 }
@@ -287,6 +289,8 @@ h2, section p {
 }
 
 .event-description {
+   width: calc(100% - 20px);
+   min-height: 110px;
    margin-top: 20px;
    margin-bottom: 20px;
    padding: 10px;
@@ -301,14 +305,13 @@ h2, section p {
    .event h2 {
       margin-left: 420px;
       height: 0;
-      margin-bottom: 20px;
    }
 
    .event img {
       float: left;
    }
    .event-details {
-      margin-top: 20px;
+      margin-top: 40px;
       margin-left: 20px;
       float: left;
       min-height: 206px;
