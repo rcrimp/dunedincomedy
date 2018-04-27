@@ -249,6 +249,39 @@ Dan Brader in his eleventh year of stand up comedy! He's lived and performed in 
             </div>
          </div>
 
+         <div class="event" id="event-toast" style="display: none;">
+            <h2>Comedy on Toast</h2>
+            <img src="img/toast.jpg">
+            <div class="event-details">
+               <table>
+                  <tr>
+                     <td>date</td>
+                     <td>Friday, June 25th</td>
+                  </tr>
+                  <tr>
+                     <td>time</td>
+                     <td>TBA</td>
+                  </tr>
+                  <tr>
+                     <td>venue</td>
+                     <td>Toast Bar</td>
+                  </tr>
+                  <tr>
+                     <td>address</td>
+                     <td>59 Princes St</td>
+                  </tr>
+                  <tr>
+                     <td>cost</td>
+                     <td>Free</td>
+                  </tr>
+               </table>
+               <a class="fb-link" href="">Facebook Event</a>
+            </div>
+            <div class="event-description">
+            <p>TBA</p>
+            </div>
+         </div>
+
          <div class="event" id="event-punbattle" style="display: none;">
             <h2>Pun Battle Championships</h2>
             <img src="img/punbattle.jpg">
@@ -346,6 +379,18 @@ Expect utter pundemonium as we decide once and for all if the pun is mightier th
                   </li>
 
                   <li>
+                     <a href="#" id="link-toast" onclick=""><div>
+                        <img src="img/toast.jpg">
+                        <div class="over-image">
+                           <p>Comedy on Toast</p>
+                        </div>
+                        <div class="under-image">
+                           <p>25th June</p>
+                        </div>
+                     </div></a>
+                  </li>
+
+                  <li>
                      <a href="#" id="link-punbattle" onclick=""><div>
                         <img src="img/punbattle.jpg">
                         <div class="over-image">
@@ -411,6 +456,13 @@ document.getElementById("link-danbrader").onclick = function() {
       $(this).css("display", "none");
    });
    $('#event-danbrader').css("display", "block")
+   return false;
+};
+document.getElementById("link-toast").onclick = function() {
+   $('.event').each(function(i, obj) {
+      $(this).css("display", "none");
+   });
+   $('#event-toast').css("display", "block")
    return false;
 };
 document.getElementById("link-punbattle").onclick = function() {
