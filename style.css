@@ -15,7 +15,7 @@ body{
    background-image: url("img/background.jpg");
    background-repeat: no-repeat;
    background-size:100%;
-   background-color: #48271e;
+   background-color: #311a14;
 }
 section {
    min-height: calc(100vh - 90px);
@@ -332,29 +332,31 @@ footer {
 
 
 /* event links */
-.fb-link {
+.fb-link, .eventfinda-link, .twitter-link {
    display: block;
    margin-top: 10px;
    padding: 10px;
    color: white;
-   background-color: #3b5998;
    font-weight: bold;
+   text-align: center;
+}
+.fb-link {
+   background-color: #3b5998;
 }
 .fb-link:hover {
    background-color: #5678be;
 }
-
 .eventfinda-link {
-   display: block;
-   margin-top: 10px;
-   padding: 10px;
-   color: white;
    background-color: #5939a2;
-   font-weight: bold;
 }
-
 .eventfinda-link:hover {
    background-color: #7556c4;
+}
+.twitter-link {
+   background-color: #4ab3f4;
+}
+.twitter-link:hover {
+   background-color: #7ac7f8;
 }
 
 /* chrome scrollbar */
