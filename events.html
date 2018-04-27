@@ -473,19 +473,16 @@ document.getElementById("link-punbattle").onclick = function() {
    return false;
 };
 
-// left / right buttons on grid scroll
 $(".arrow:first-of-type").click(
-      function() {
-         var navwidth = $("#nav");
-         navwidth.scrollLeft(navwidth.scrollLeft() - 210);
-      }
-      );
+   function() {
+      $('#nav').animate({scrollLeft:"-=" + 210}, 300);
+   }
+);
 $(".arrow:nth-of-type(2)").click(
-      function() {
-         var navwidth = $("#nav");
-         navwidth.scrollLeft(navwidth.scrollLeft() + 210);
-      }
-      );  
+   function() {
+      $('#nav').animate({scrollLeft:"+=" + 210}, 300);
+   }
+); 
          </script>
 
       <footer>&copy; Dunedin Comedy Club</footer>
