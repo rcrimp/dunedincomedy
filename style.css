@@ -5,33 +5,22 @@
 }
 html, body {
    height: 100%;
+   color: white;
+   margin: 0px;
 }
 a {
     text-decoration: none;
 }
-#container {
-   margin-top: 50px;
-   display:block;
-   min-height:calc(100% - (2 * 50px));
+body{
    background-image: url("img/background.jpg");
    background-repeat: no-repeat;
    background-size:100%;
    background-color: #48271e;
 }
-/* footer */
-footer {
-   /* position: absolute;*/
-   left: 0;
-   right: 0;
-   bottom: 0;
-   padding: 1em;
-   background-color: #800000; 
-   color: white;
-   text-align: center;
-   clear: both;
+section {
+   min-height: calc(100vh - 90px);
+   padding-top:50px;
 }
-
-
 p {
    clear: both;
    color: white;
@@ -48,6 +37,13 @@ h2 {
    padding: 20px;
    color: white;
 }
+footer {
+   background-color: #800000; 
+   color: white;
+   text-align: center;
+   height: 40px;
+   line-height: 40px;
+}
 
 /* events section (horizontal scrolling events) */
 .scroll-wrapper {
@@ -55,7 +51,7 @@ h2 {
    padding:0 30px;
    overflow:hidden;
    position:relative;
-   z-index:99; 
+   z-index:99;
 }
 .grid-scroll {
    font-size: 0;
@@ -76,8 +72,10 @@ h2 {
    display: inline-block;
    width: 200px;
    margin: 0;
-   margin-right: 10px;
    background-color: #800000;
+}
+.grid-scroll li:not(:last-child) {
+      margin-right: 10px;
 }
 .grid-scroll li:hover {
    background-color: #c42020;
