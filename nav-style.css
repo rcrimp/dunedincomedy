@@ -6,7 +6,6 @@ nav {
    top: 0;
    z-index: 100000; /* on top of everything */
    background-color: #800000;
-   height: 50px;
 }
 
 #logo {
