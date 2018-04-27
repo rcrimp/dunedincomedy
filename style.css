@@ -49,7 +49,7 @@ h2 {
    color: white;
 }
 
-/* events section */
+/* events section (horizontal scrolling events) */
 .scroll-wrapper {
    width:calc(100% - (2 * 30px));
    padding:0 30px;
@@ -57,7 +57,6 @@ h2 {
    position:relative;
    z-index:99; 
 }
-
 .grid-scroll {
    font-size: 0;
    display: block;
@@ -76,15 +75,56 @@ h2 {
 .grid-scroll li {
    display: inline-block;
    width: 200px;
-   padding-right: 10px;
    margin: 0;
+   margin-right: 10px;
+   background-color: #800000;
 }
+.grid-scroll li:hover {
+   background-color: #c42020;
+}
+
 .grid-scroll li div img {
    width: 100%;
+   filter: brightness(70%);
+}
+.grid-scroll li div img:hover {
+   filter: none;
 }
 
 .grid-scroll li div {
    position: relative;
+}
+.over-image {
+   display: block;
+   position: absolute;
+   left: 0;
+   bottom: 30px;
+   height: 0;
+}
+.over-image p {
+   pointer-events: none;
+   font-size: 1rem;
+   text-align: center;
+   height: 20px;
+   color: white;
+   padding: 5px;
+   color: white;
+   text-shadow: 0 0 5px black;
+}
+.under-image {
+   display: block;
+   position: absolute;
+   left: 0;
+   height: auto;
+}
+.under-image p {
+   font-size: 1rem;
+   text-align: center;
+   height: 100%;
+   color: white;
+   padding: 5px;
+   background-color: inherit; /* inherits grid-scroll li:hover */
+   color: white;
 }
 .arrow {
    width:30px;
@@ -93,15 +133,12 @@ h2 {
    cursor:pointer;
    position:absolute;
    top:0;
-   
    height: 100%;
    padding: 0;
-
    display: flex;
    justify-content:center;
    align-content:center;
-   flex-direction:column; /* column | row */
-
+   flex-direction:column;
    color: white;
    background-color: rgba(0,0,0, 0.5);
 }
@@ -115,44 +152,7 @@ h2 {
 }
 
 
-
-.over-image {
-   display: block;
-   position: absolute;
-   left: 0;
-   bottom: 30px;
-   height: 0;
-}
-.over-image p {
-   font-size: 1rem;
-   text-align: center;
-   height: 20px;
-   color: white;
-   padding: 5px;
-   color: white;
-   text-shadow: 0 0 5px black;
-}
-
-
-.under-image {
-   display: block;
-   position: absolute;
-   left: 0;
-   height: auto;
-}
-
-.under-image p {
-   font-size: 1rem;
-   text-align: center;
-   height: 100%;
-   color: white;
-   padding: 5px;
-   background-color: #800000;
-   color: white;
-}
-
-
-/* image grid-flow */
+/* image grid flow (grid of comedians) */
 .grid-flow {
    overflow: hidden;
    list-style: none;
@@ -201,6 +201,8 @@ h2 {
       width: 16.66666666%;
    }
 }
+
+/* Youtube css */
 #video-wrapper-wrapper-wrapper {
    background-color: rgba(0,0,0, 0.5);
 }
@@ -220,11 +222,11 @@ h2 {
    width: 100%;
    height: 100%;
 }
+/* vimeo css */
 /*#video-wrapper-wrapper {
    max-height: 350px;
    background-color: rgba(0,0,0, 0.5);
 }
-
 #video-wrapper {
    float: none;
    clear: both;
@@ -280,7 +282,9 @@ h2 {
    color: white;
    font-weight: bold;
 }
-
+.event-details table tr:first-child td:nth-child(2) {  
+      font-size: 20px;
+}
 .event-description {
    width: calc(100% - 20px);
    min-height: 110px;
@@ -311,9 +315,6 @@ h2 {
 
       width: calc(750px - (400px + 40px));
     }
-    .event-details table tr td {  
-      /*padding: 5px 0 5px 0;*/
-   }
     .event-description {
       clear: both;
       float: left;
@@ -322,8 +323,8 @@ h2 {
 
 
 
-
- .fb-link {
+/* event links */
+.fb-link {
    display: block;
    margin-top: 10px;
    padding: 10px;
@@ -331,9 +332,9 @@ h2 {
    background-color: #3b5998;
    font-weight: bold;
 }
- .fb-link:hover {
+.fb-link:hover {
    background-color: #5678be;
- }
+}
 
 .eventfinda-link {
    display: block;
@@ -348,16 +349,16 @@ h2 {
    background-color: #7556c4;
 }
 
+/* chrome scrollbar */
+::-webkit-scrollbar-track
+{
+   background-color: #f1f1f1;
+}
 
 ::-webkit-scrollbar
 {
    height: 0;
    width: 17px;
-}
-
-::-webkit-scrollbar-track
-{
-   background-color: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb
@@ -372,4 +373,9 @@ h2 {
 
 ::-webkit-scrollbar-thumb:active {
    background-color: #787878;
+}
+
+::-webkit-scrollbar-button {
+   width: 17px;
+   height: 17px;
 }
