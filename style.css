@@ -179,31 +179,36 @@ h2 {
    color: white;
    margin: 0px auto 15px auto;
 }
-
-@media all and (min-width: 25em) {
+@media all and (min-width: 20em) {
    .grid-flow li {
       width: 50%;
       float: left;
    }
 }
-@media all and (min-width: 40em) {
+@media all and (min-width: 30em) {
    .grid-flow li {
       width: 33.3333333%;
+      float: left;
    }
 }
-@media all and (min-width: 60em) {
+@media all and (min-width: 40em) {
    .grid-flow li {
       width: 25%;
    }
 }
-@media all and (min-width: 80em) {
+@media all and (min-width: 60em) {
    .grid-flow li {
       width: 20%;
    }
 }
-@media all and (min-width: 100em) {
+@media all and (min-width: 80em) {
    .grid-flow li {
       width: 16.66666666%;
+   }
+}
+@media all and (min-width: 100em) {
+   .grid-flow li {
+      width: 14.2857143%;
    }
 }
 
