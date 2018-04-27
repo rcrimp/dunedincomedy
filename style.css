@@ -65,6 +65,7 @@ h2 {
    padding: 0;
    white-space: nowrap;
    overflow:hidden;
+   overflow-x:scroll;
    list-style-type:none;
    white-space:nowrap;
    transition:2.0s;
@@ -150,17 +151,6 @@ h2 {
    background-color: #800000;
    color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* image grid-flow */
